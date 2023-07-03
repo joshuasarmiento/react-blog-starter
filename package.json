@@ -1,7 +1,6 @@
 {
   "homepage": "https://joshuasarmiento.github.io/react-blog-starter",
   "name": "vite-react-blog-starter",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
