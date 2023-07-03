@@ -1,19 +1,19 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
 import useFetch from '../utils/useFetch';
-import { useNavigate  } from 'react-router-dom'
+import { useHistory  } from 'react-router-dom'
 
 const BlogDetails = () => {
     const {id} = useParams();
     const { data, isLoading, error } = useFetch(`https://project-apis.onrender.com/blogs/${id}`);
-    const navigateTo = useNavigate();
+    const navigateTo = useHistory();
 
     const handleDelete = () => {
         fetch(`https://project-apis.onrender.com/blogs/${id}`, {
             method: 'DELETE'
         }).then(() => {
             // window.location = '/';
-            navigateTo('/');
+            navigateTo.go(-1);
         })
     }
 

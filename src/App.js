@@ -5,7 +5,7 @@ import About from './views/About';
 import CreateBlog from './views/Create'
 import BlogDetails from './views/BlogDetails';
 import NotFound from './views/NotFound';
-import  { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,13 +13,23 @@ function App() {
       <div className="App">
           <Navbar />
           <div className="content">
-            <Routes>
-                <Route index element={<Homepage />}/>
-                <Route path="Create" element={<CreateBlog />}/>
-                <Route path="/blogs/:id" element={<BlogDetails />}/>
-                <Route path="About" element={<About />}/>
-                <Route path="*" element={<NotFound />} />
-            </Routes>
+            <Switch>
+              <Route exact path="/">
+                <Homepage />
+              </Route>
+              <Route path="/create">
+                <CreateBlog />
+              </Route>
+              <Route path="/blogs/:id">
+                <BlogDetails />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="*">
+                <NotFound />
+              </Route>
+            </Switch>
           </div>
       </div>
     </Router>

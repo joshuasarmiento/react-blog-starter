@@ -5,6 +5,10 @@
 - async code
 - built-in hooks & custom hooks
 
+# Router Package JSON
+
+- "react-router-dom": "^5.3.4",
+
 # API
 
 https://project-apis.onrender.com/blogs
@@ -13,6 +17,6 @@ https://project-apis.onrender.com/blogs
 
 In the project directory, you can run:
 
-## `npm install`
-## `npm run dev`
-## `npm run build`
+`npm install`
+`npm run dev`
+`npm run build`
