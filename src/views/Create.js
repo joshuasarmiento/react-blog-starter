@@ -15,7 +15,7 @@ const CreateBlog = () => {
 
         setIsLoading(true);
 
-        fetch('http://localhost:8080/blogs',{
+        fetch('https://project-apis.onrender.com/blogs',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)

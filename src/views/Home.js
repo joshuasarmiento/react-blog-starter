@@ -3,7 +3,7 @@ import BlogList from "../Components/BlogList";
 import useFetch from "../utils/useFetch";
 
 const Homepage = () => {
-    const { data: blogs, isLoading, error } = useFetch("http://localhost:8080/blogs");
+    const { data: blogs, isLoading, error } = useFetch("https://project-apis.onrender.com/blogs");
 
     return (    
         <div className="home">

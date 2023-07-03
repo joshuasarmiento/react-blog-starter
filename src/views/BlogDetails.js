@@ -5,11 +5,11 @@ import { useNavigate  } from 'react-router-dom'
 
 const BlogDetails = () => {
     const {id} = useParams();
-    const { data, isLoading, error } = useFetch(`http://localhost:8080/blogs/${id}`);
+    const { data, isLoading, error } = useFetch(`https://project-apis.onrender.com/blogs/${id}`);
     const navigateTo = useNavigate();
 
     const handleDelete = () => {
-        fetch(`http://localhost:8080/blogs/${id}`, {
+        fetch(`https://project-apis.onrender.com/blogs/${id}`, {
             method: 'DELETE'
         }).then(() => {
             // window.location = '/';
