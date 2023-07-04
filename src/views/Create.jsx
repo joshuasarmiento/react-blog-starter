@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom'
 
 const CreateBlog = () => {
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
     const [author, setAuthor] = useState('Joshua')
     const [isLoading, setIsLoading] = useState(false);
-    const navigateTo = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,8 +19,8 @@ const CreateBlog = () => {
         })
         .then(() => {
             setIsLoading(false);
-            // window.location = '/';
-            navigateTo('/');
+            window.location = '/';
+            // navigateTo('/');
         })
     }
 
