@@ -9,7 +9,7 @@ const BlogDetails = () => {
         fetch(`https://project-apis.onrender.com/blogs/${id}`, {
             method: 'DELETE'
         }).then(() => {
-            window.location = '/';
+            window.location = '/react-blog-starter';
             // navigateTo('/');
         })
     }

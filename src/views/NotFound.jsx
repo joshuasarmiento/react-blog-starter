@@ -4,7 +4,7 @@ const NotFound = () => {
         <div className="not-found">
             <h2>Sorry</h2>
             <p>That page cannot be found</p>
-            <Link to="/" className="btn">Back Home</Link>
+            <Link to="/react-blog-starter" className="btn">Back Home</Link>
         </div> 
     );
 }

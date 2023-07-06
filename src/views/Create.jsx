@@ -19,7 +19,7 @@ const CreateBlog = () => {
         })
         .then(() => {
             setIsLoading(false);
-            window.location = '/';
+            window.location = '/react-blog-starter';
             // navigateTo('/');
         })
     }

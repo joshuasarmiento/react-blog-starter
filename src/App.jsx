@@ -13,10 +13,10 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/create" element={<CreateBlog />} />
-            <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="/react-blog-starter" element={<Homepage />} />
+            <Route path="/react-blog-starter/about" element={<About />} />
+            <Route path="/react-blog-starter/create" element={<CreateBlog />} />
+            <Route path="/react-blog-starter/blogs/:id" element={<BlogDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

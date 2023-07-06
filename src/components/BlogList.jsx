@@ -8,7 +8,7 @@ const BlogList = ({ blogs, title }) => {
       {blogs.map((blog) => {
         return (
           <div className="blog-preview" key={blog.id}>
-            <Link to={`/blogs/${blog.id}`}>
+            <Link to={`/react-blog-starter/blogs/${blog.id}`}>
               <div className="blog-title-btn">
                 <span>
                   <h2>{blog.title}</h2>
