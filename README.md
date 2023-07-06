@@ -1,4 +1,4 @@
-## Link
+## React + Vite
 
 https://joshuasarmiento.github.io/react-blog-starter/
 
